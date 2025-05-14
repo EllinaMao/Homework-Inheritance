@@ -1,13 +1,13 @@
 ﻿#include <iostream>
-#include "Animal.h"
-#include "AnimalUtil.h"
-#include "Parrot.h"
-#include "Dog.h"
-#include "Cat.h"
+//#include "Animal.h"
+//#include "AnimalUtil.h"
+//#include "Parrot.h"
+//#include "Dog.h"
+//#include "Cat.h"
 
 #include "String.h"
 #include "BitString.h"
-#define PART_ONE
+//#define PART_ONE
 
 using namespace std;
 /*
@@ -120,7 +120,7 @@ int main()
 
     b3.Negate();
     cout << "b3 after Negate(): " << b3;
-
+    cout << "b1: " << b1;
 #endif // STRING and BINARY_STRING
     }
 

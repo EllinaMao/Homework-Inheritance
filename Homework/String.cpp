@@ -114,7 +114,7 @@ String& String::operator=(String&& a) noexcept {
 
 
 String::~String() {
-	if (str) {
+  	if (str) {
 		delete[] str;
 		str = nullptr;
 		count--;
@@ -156,10 +156,8 @@ String& String::operator+=(const String& other) {
 }
 
 void String::SetStr(const char* str_user) {
-	if (str) {
-		delete[] str;
-	}
 	size_t len = strlen(str_user) + 1;
+
 	Reserve(len);
 	strcpy_s(str, capacity, str_user);
 }

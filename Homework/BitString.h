@@ -22,7 +22,7 @@ public:
     explicit BinaryString(const char* str_user);
 
 
-    BinaryString(const BinaryString& other);
+    BinaryString(const BinaryString& other) :String(other) {}
 
     ~BinaryString() override;
 
