@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AnimalUtil.cpp" />
+    <ClCompile Include="BitString.cpp" />
     <ClCompile Include="Homework.cpp" />
     <ClCompile Include="String.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />
     <ClInclude Include="AnimalUtil.h" />
+    <ClInclude Include="BitString.h" />
     <ClInclude Include="Cat.h" />
     <ClInclude Include="Dog.h" />
     <ClInclude Include="Parrot.h" />

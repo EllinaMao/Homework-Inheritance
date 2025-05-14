@@ -22,7 +22,6 @@ protected:
 	static size_t count;
 	void InputStr(char*& temp) const;
 	size_t InputSize() const;
-
 public:
 	String();
 	explicit String(size_t size);
@@ -30,11 +29,11 @@ public:
 	String(const String& a);
 	String(String&& a) noexcept;
 
-	String& operator =(const String& a);
-	String& operator =(String&& a) noexcept;
-	String& operator+=(const String& other);
+	virtual String& operator =(const String& a);
+	virtual  String& operator =(String&& a) noexcept;
+	virtual  String& operator+=(const String& other);
 
-	~String();
+	virtual ~String();
 
 	void Clear();
 	void SetStr(const char* str_user);
