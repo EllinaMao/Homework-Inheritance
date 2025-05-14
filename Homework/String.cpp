@@ -113,10 +113,10 @@ String& String::operator=(String&& a) noexcept {
 
 
 
-String::~String()
-{
+String::~String() {
 	if (str) {
 		delete[] str;
+		str = nullptr;
 		count--;
 	}
 }
