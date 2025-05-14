@@ -9,24 +9,25 @@ BinaryString::BinaryString(const char* str_user) : String() {
        SetStr(str_user);  
 }
 
-BinaryString::BinaryString(const BinaryString& other) {
-    if (other.str) {
-        size_t len = strlen(other.str) + 1;
-        capacity = ((len + 15) / 16) * 16;
-        str = new char[capacity];
-        strcpy_s(str, capacity, other.str);
-    }
-    else {
-        str = nullptr;
-        capacity = 0;
-    }
-    count++;
-}
+//BinaryString::BinaryString(const BinaryString& other) {
+//    if (other.str) {
+//        size_t len = strlen(other.str) + 1;
+//        capacity = ((len + 15) / 16) * 16;
+//        str = new char[capacity];
+//        strcpy_s(str, capacity, other.str);
+//    }
+//    else {
+//        str = nullptr;
+//        capacity = 0;
+//    }
+//    count++;
+//}
 
 
 
 BinaryString::~BinaryString() {
-    str = nullptr;
+    //str = nullptr;
+    cout << "Bin destr" << endl;
 }
 
 
